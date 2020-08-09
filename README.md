@@ -7,9 +7,9 @@ A Neural network drawing Inference from real-time webcam feed.
 
 - __Feeding Data:__
 <pre>
- <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/paper.png" width = "250" height= "150">     <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/rock.png" width = "250" height= "150">     <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/scissors.png" width = "250" height= "150">
+ <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/paper.png" width = "600" height= "400">     <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/rock.png" width = "600" height= "400">     <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/scissors.png" width = "600" height= "400">
 </pre>
 
 - __Predictions:__
 
-  <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/prediction.png" width = "250" height= "150">
+  <img src = "https://raw.githubusercontent.com/Hardly-Human/Inference-from-Webcam-Feed/master/prediction.png" width = "600" height= "400">
