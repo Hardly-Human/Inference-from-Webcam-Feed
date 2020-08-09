@@ -1,0 +1,60 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="webcam.js"></script>
+<script src="rps-dataset.js"></script>
+
+<link href="style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class ="title"><b>Inference from Webcam Feed</b></div>
+	
+	<div class="split right">
+		<div>
+			<div>
+				<video autoplay playsinline muted id="wc" width="600" height="650"></video>
+			</div>
+		</div>
+	</div>
+
+	<div class = "split left">
+	</br>
+	</br>
+		<p style="color:Black; font-size:25px ;display:inline-block; ">Collect Samples from Webcam</p></br>
+		<button type="button" id="0" onclick="handleButton(this)" class = "button button1">Rock</button>
+		<div style="display:inline-block;" id="rocksamples"><h4>Rock Samples Collected:</h4></div>
+		</br>
+		
+		<button type="button" id="1" onclick="handleButton(this)" class = "button button2">Paper</button>
+		<div style="display:inline-block;" id="papersamples"><h4>Paper Samples Collected:</h4></div>
+		</br>
+		
+		<button type="button" id="2" onclick="handleButton(this)" class = "button button3">Scissors</button>
+		<div style="display:inline-block;" id="scissorssamples"><h4>Scissors Samples Collected:</h4></div>
+		</br>
+		
+		<p style="color:Black; font-size:25px ;display:inline-block; ">Training Network :   </p>
+		<button type="button" id="train" onclick="doTraining()" class="button button4">Train Network</button>
+		
+		<div id="dummy">
+		<h4 style="color:green;">
+		Once training is complete!! (Train Network Button becomes Transperant...)
+		</br> Click 'Start Predicting' to see predictions, and 'Stop Predicting' to end
+		</h4>
+		</div>
+		<h3 style = "display:inline-block;" id>Result : <div id="prediction" style = "display:inline-block;" ><h3></h3> </div></h3>
+		
+		</br>
+		<button type="button" id="startPredicting" onclick="startPredicting()" class = "button button5">Start Predicting</button>
+		<button type="button" id="stopPredicting" onclick="stopPredicting()" class="button button5">Stop Predicting</button>
+		
+		
+	</div>
+	
+	
+</body>
+
+<script src="index.js"></script>
+</html>
